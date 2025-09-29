@@ -1,0 +1,133 @@
+.plans-container {
+  text-align: center;
+  padding: 40px 20px;
+  user-select: none;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.plan {
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  width: 280px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  position: relative;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+
+  .slash {
+    color: #888;
+    font-weight: normal;
+    margin: 0 4px;
+  }
+
+  .once {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+
+  .note {
+    font-size: 14px;
+    color: #888;
+    font-weight: normal;
+    margin-left: 4px;
+  }
+}
+
+
+  .validity {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+  }
+
+  .features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+    li {
+      font-size: 14px;
+      margin-bottom: 6px;
+      text-align: left;
+    }
+  }
+
+  button {
+    background: #8e44ad;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .card-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .tag {
+    background: #8e44ad12;
+    color: #8e44adde;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .description{
+    font-size: 13px;
+    color: #55555575;
+    margin-top: 10px;
+  }
+
+.divider {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 10px 0;
+}
+
+
+  &.popular {
+    border-color: #8e44ad;
+  }
+
+  &.best-seller {
+    border-color: #27ae60;
+  }
+
+  &.premium-pick {
+    border-color: #e67e22;
+  }
+}

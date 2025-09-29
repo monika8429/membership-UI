@@ -1,0 +1,28 @@
+<div class="login-container">
+    <div class="tabs">
+        <button class="tab active">Log In</button>
+        <button class="tab signup" routerLink="/signup">Sign Up</button>
+    </div>
+
+    <div class="heading-wrapper">
+        <hr class="divider-line">
+        <div class="login">
+            <div class="top-text">Log In for</div>
+            <div class="bottom-text">membership</div>
+        </div>
+
+    </div>
+
+    <form (ngSubmit)="onLogin()">
+        <label for="phone">Phone:</label>
+        <div class="phone-input-wrapper">
+            <input type="text" id="phone" placeholder="Phone Number" [(ngModel)]="phone" name="phone" required>
+            <button type="button" class="send-otp-btn" (click)="sendOtp()">Send OTP</button>
+        </div>
+
+        <label for="otp">Enter OTP:</label>
+        <input type="text" id="otp" placeholder="Enter OTP" [(ngModel)]="otp" name="otp" required>
+
+        <button type="submit" class="login-btn">Log In</button>
+    </form>
+</div>

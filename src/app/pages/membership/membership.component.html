@@ -1,0 +1,25 @@
+<div class="plans-container">
+    <h2>A Small Price for <span><em>Priceless</em> Opportunities</span></h2>
+
+    <div class="plans">
+        <div class="plan" *ngFor="let plan of plans" [ngClass]="plan.tag.toLowerCase()">
+            <div class="card-header">
+                <h3>{{ plan.name }}</h3>
+                <div class="tag" *ngIf="plan.tag"><i class="fas fa-star" style="color: #8e44adde;"></i> {{ plan.tag }}
+                </div>
+            </div>
+            <p class="description">{{ plan.details }}</p>
+            <hr class="divider">
+            <p class="price">
+                ₹ {{ plan.price }}
+                <span class="slash"> / </span>
+                <span class="once">Once</span>
+                <span class="note">non refundable</span>
+            </p>
+            <ul class="features">
+                <li *ngFor="let feature of plan.features"><i class="fas fa-check-circle" style="color: #8e44ad91;"></i> {{ feature }}</li>
+            </ul>
+            <button (click)="selectPlan(plan)">Get Membership</button>
+        </div>
+    </div>
+</div>

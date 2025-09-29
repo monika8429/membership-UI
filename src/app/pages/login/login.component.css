@@ -1,0 +1,135 @@
+.login-container {
+  width: 340px;
+  margin: 60px auto;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  text-align: center;
+  background-color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  user-select: none;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px;
+  border: none;
+  background: #eee;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 6px 6px 6px 6px;
+  transition: background 0.3s ease;
+}
+
+.tab.active {
+  background: #8e44ad63;
+  color: black;
+  width: 150px;
+}
+
+.tab.signup{
+    background: none;
+    color: black;
+    width: 150px;
+    border: 1px solid;
+}
+
+.heading {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #32064496;
+}
+
+.phone-input-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.phone-input-wrapper input {
+  width: 100%;
+  padding: 8px 100px 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.send-otp-btn {
+  position: absolute;
+  top: 35%;
+  right: 8px;
+  transform: translateY(-50%);
+  background: #8e44ad24;
+  border: none;
+  padding: 4px 7px;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background: #8e44ada6;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.heading-wrapper {
+  text-align: center;
+  position: relative;
+  margin: 30px 0;
+}
+
+.top-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #410a58eb;
+  margin-top: -38px;
+}
+
+.divider-line {
+  border: none;
+  height: 2px;
+  background-color: #8e44ad7d;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.bottom-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #410a58eb;
+  margin-top: 8px;
+}
+
+.login{
+    width: 120px;
+    background: white;
+    margin-left: 106px;
+}

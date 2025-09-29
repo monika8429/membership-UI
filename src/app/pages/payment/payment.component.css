@@ -1,0 +1,49 @@
+.payment-container {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  margin-left: 440px;
+  margin-top: -50px;
+}
+
+.qr-box {
+    display: flex;
+    width: 290px;
+    height: 260px;
+    padding: 10px;
+    border: 2px solid #8e44ad;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.confirm-btn {
+  background: #8e44ad;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 10px 10px 10px 10px;
+  width: 170px;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 38px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  user-select: none;
+}
+
+.validity{
+    font-size: 14px;
+    color: #8e44ad91;
+}

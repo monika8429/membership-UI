@@ -1,0 +1,13 @@
+<button class="back-btn" routerLink="/membership">←</button>
+<div class="payment-container">
+
+  <h2>{{planTitle}}</h2>
+  <h2>₹ {{planPrice}}</h2>
+  <p class="validity">(Valid for {{validity}})</p>
+
+  <div class="qr-box">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?data=DummyPaymentLink&size=200x200" alt="QR Code">
+  </div>
+
+  <button class="confirm-btn" (click)="confirm()">Confirm & Start</button>
+</div>
