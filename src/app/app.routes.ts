@@ -8,4 +8,5 @@ export const routes: Routes = [
   { path: 'membership', component: MembershipComponent },
   { path: 'payment/:plan', component: PaymentComponent }, 
   { path: 'login', component: LoginComponent },
+  { path: '**', redirectTo: '/membership' }
 ];
